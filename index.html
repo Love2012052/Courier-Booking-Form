@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      button {
+        width: 100%;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        box-sizing: border-box;
+        padding: 20px 0px;
+        font-size: 16px;
+      }
+      form {
+        width: 40%;
+        color: blue;
+        padding: 20px 40px;
+        border: 4px solid blue;
+        border-radius: 10px;
+      }
+      #textfield {
+        width: 100%;
+        height: 50px;
+      }
+      @media screen and (max-width: 800px) {
+        .heading {
+          font-size: 16px;
+        }
+        h1 {
+          font-size: 16px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        form {
+          width: 60%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center">
+      <form>
+        <h1>Courier Booking Form</h1>
+        <h2 class="heading">Requester First Name</h2>
+        <input type="text" placeholder="Your first name.." required />
+        <br />
+        <h2 class="heading">Requester Last Name</h2>
+        <input type="text" placeholder="Your last name" required />
+        <br />
+        <h2 class="heading">Phone Number</h2>
+        <input type="number" placeholder="Enter your phone number" required />
+        <br />
+        <div>
+          <div>
+            <h2 class="heading">Desired Delivery Date</h2>
+            <input type="date" required />
+          </div>
+        </div>
+        <br />
+        <h2 class="heading">Shipping Address</h2>
+        <div>
+          <div class="div2child">
+            <input type="text" placeholder="Street Address" required />
+            <br />
+            <br />
+          </div>
+          <div class="div2child">
+            <input type="text" placeholder="City" required />
+            <br />
+            <br />
+          </div>
+          <div class="div2child">
+            <input
+              type="text"
+              placeholder="State/ Province/ Country"
+              required
+            />
+            <br />
+            <br />
+          </div>
+          <div class="div2child">
+            <input type="text" placeholder="Postal/ Zip Code" required />
+            <br />
+            <br />
+          </div>
+        </div>
+        <h2 class="heading">Description of goods</h2>
+        <textarea id="textfield"></textarea>
+        <br />
+        <h2 class="heading">Package Weight (KG)</h2>
+        <input type="text" required />
+        <br />
+        <h2 class="heading">Package Dimensions (CM)</h2>
+        <input type="number" required />
+        <br />
+        <br />
+        <br />
+        <button>Submit</button>
+        <br />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
